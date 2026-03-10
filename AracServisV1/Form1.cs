@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AracServisV1.KullanicilarFrm;
 
 namespace AracServisV1
 {
@@ -15,6 +16,12 @@ namespace AracServisV1
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnKullaniciEkle_Click(object sender, EventArgs e)
+        {
+            KullaniciEkle frm = new KullaniciEkle();
+            frm.ShowDialog();
         }
     }
 }

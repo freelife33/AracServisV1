@@ -15,7 +15,7 @@ namespace AracServisV1.DataAccess
         public void KullaniciEkle(Entity.Kullanici kullanici)
         {
 
-            string sorgu= "Insert Into kullacilar (kullanici_adi, ad, soyad, eposta, telefon, parola_hash, rol) " +
+            string sorgu= "Insert Into kullanicilar (kullanici_adi, ad, soyad, eposta, telefon, parola_hash, rol) " +
                 "Values (@kullanici_adi, @ad, @soyad, @eposta, @telefon, @parola_hash, @rol)";
 
             MySqlCommand cmd = new MySqlCommand(sorgu, _context.conn());
